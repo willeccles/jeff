@@ -1,9 +1,9 @@
 .PHONY: clean
 
-CFLAGS += -O3 -std=c11
+CXXFLAGS += -O3 -std=c++17
 
-jeff: jeff.c
-	$(CC) $(CFLAGS) -o jeff jeff.c
+jeff: jeff.cpp
+	$(CXX) $(CFLAGS) -o jeff jeff.cpp
 
 clean:
 	rm jeff
